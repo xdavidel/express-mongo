@@ -1,0 +1,19 @@
+{
+  "name": "express-mongo",
+  "version": "1.0.0",
+  "description": "Simple Template For Using Express with mongodb",
+  "main": "server.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "author": "xdavidel@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongodb": "^3.0.10"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
