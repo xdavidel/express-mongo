@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <link rel="stylesheet" href="bulma.min.css"> -->
+<link rel="stylesheet" href="./styles.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <img class="img" src="https://images.freeimages.com/images/large-previews/25d/eagle-1523807.jpg" alt="">
+        <span class="logo">{{logo}}</span>
+        <img class="img" src="https://images.freeimages.com/images/large-previews/25d/eagle-1523807.jpg" alt="">
+    </header>
+    <section class="container head-space">
+        <center>
+            <main>
+                <h2>
+                    <b>CAN Records</b>
+                </h2>
+                <form id="form" action="/api/post" method="POST">
+                    <div class="field-container">
+                        <input type="file" name="file" id="file" class="field upload" required/>
+                        <label id="file-label" for="file">Choose a file</label>
+                    </div>
+                    <div class="field-container">
+                        <input type="text" name="driverId" class="field" required placeholder="Driver ID" />
+                        <label class="floating-label">Driver ID</label>
+                        <div class="field-underline"></div>
+                    </div>
+                    <div class="field-container">
+                        <input type="text" class="field" name="vehicleId" required placeholder="Vehicle ID" />
+                        <label class="floating-label">Vehicle ID</label>
+                        <div class="field-underline"></div>
+                    </div>
+                    <div class="field-container">
+                        <div style="width: 600px; display: table-cell;">
+                            <input type="date" name="date" class="field" required placeholder="Date" />
+                            <label class="floating-date">Date and Time</label>
+                            <div class="field-underline"></div>
+                        </div>
+                        <div style="display: table-cell;">
+                            <input type="time" name="time" class="field" required placeholder="Time" />
+                            <div class="field-underline"></div>
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <input type="text" name="keyWords" class="field" required placeholder="Key Words" />
+                        <label class="floating-label">Key Words</label>
+                        <div class="field-underline"></div>
+                    </div>
+                    <div class="field-container">
+                        <input id="submit" type="submit" class="btn" value="Submit" />
+                    </div>
+                </form>
+            </main>
+
+
+            <footer>
+                All right reserved &copy;
+            </footer>
+        </center>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

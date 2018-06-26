@@ -1,0 +1,160 @@
+.field-container {
+  position: relative;
+  width: 200px;
+  margin-top:20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.field {
+  display:block;
+  width:100%;
+  padding:15px 10px 0;
+  border:none;
+  font-size:14px;
+  background-color: black;
+  color: white;
+}
+
+.field:focus {
+  outline: 0;
+}
+
+.floating-label {
+  position:absolute;
+  pointer-events:none;
+  top: 5px;
+  left:10px;
+  font-size: 10px;
+  opacity:0;
+  background-color: black;
+  padding: 0 2px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.field:valid + .floating-label {
+  opacity:1;
+  top:-5px;
+  color: #9e9e9e;
+}
+
+.field:focus + .floating-label {
+  color: #03a9f4;
+}
+
+.field-underline {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:-5px;
+  border:1px solid #9e9e9e;
+  z-index: -1;
+  padding:10px 10px 0;
+}
+
+.field:focus + .floating-label + .field-underline {
+  border-color:#03a9f4;
+}
+
+.floating-date{
+  position:absolute;
+  pointer-events:none;
+  left:10px;
+  font-size: 10px;
+  background-color: black;
+  padding: 0 2px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border-color:#03a9f4;
+  opacity:1;
+  top:-5px;
+  color: #9e9e9e;
+}
+
+body {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    color: whitesmoke;
+    font-family: 'Lucida Sans';
+}
+
+.btn{
+    border-radius: 5px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #03a9f4;
+    color: whitesmoke;
+
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* I added those */
+
+header {
+  min-height: 100px;
+  background-color: red;
+  width: 100%;
+  display: flex;
+}
+
+.img{
+  max-height: 100px;
+  flex-grow: 1;
+}
+
+.logo{
+  flex-grow: 10;
+  text-align: center;
+  font-size: 70px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+footer{
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  background-color: red;
+  bottom: 0;
+  color: whitesmoke;
+}
+
+main{
+  margin-bottom: 30px;
+}
+
+.upload {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+}
+
+.upload + label {
+    width: 200px;
+    height:40px;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    line-height: 2.6em;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #03a9f4;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 3px 0px #0294d8;
+    transition: 150ms;
+}
+
+.upload:focus + label,
+.upload + label:hover {
+    opacity: 0.85;
+    cursor:pointer;
+}
+

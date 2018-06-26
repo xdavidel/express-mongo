@@ -10,8 +10,11 @@
   "author": "xdavidel@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "mongodb": "^3.0.10"
+    "express-handlebars": "^3.0.0",
+    "mongodb": "^3.0.10",
+    "mustache-express": "^1.2.6"
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
